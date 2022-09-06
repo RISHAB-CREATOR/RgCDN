@@ -18,17 +18,17 @@ def download(img_name, url):
       f = open(f"static/uploads/{img_name}.png", "wb")
       f.write(res.content)
       f.close()
-      return f"https://RishabCDN.intellectual-ga.repl.co/static/uploads/{img_name}.png"
+      return f"https://rishab-creator.github.io/RishabCDN/static/uploads/{img_name}.png"
     elif u.endswith('.jpg'):
       f = open(f"static/uploads/{img_name}.jpg", "wb")
       f.write(res.content)
       f.close()
-      return f"https://RishabCDN.intellectual-ga.repl.co/static/uploads/{img_name}.jpg"
+      return f"https://rishab-creator.github.io/RishabCDN/static/uploads/{img_name}.jpg"
     elif u.endswith('.jpeg'):
       f = open(f"static/uploads/{img_name}.jpeg", "wb")
       f.write(res.content)
       f.close()
-      return f"https://RishabCDN.intellectual-ga.repl.co/static/uploads/{img_name}.jpeg"
+      return f"https://rishab-creator.github.io/RishabCDN/static/uploads/{img_name}.jpeg"
     elif u.endswith('.webp'):
       f = open(f"static/uploads/{img_name}.webp", "wb")
       f.write(res.content)
@@ -38,7 +38,7 @@ def download(img_name, url):
       f = open(f"static/uploads/{img_name}.gif", "wb")
       f.write(res.content)
       f.close()
-      return f"https://RishabCDN.intellectual-ga.repl.co/static/uploads/{img_name}.gif"
+      return f"https://rishab-creator.github.io/RishabCDN/static/uploads/{img_name}.gif"
     elif u.endswith('.webm'):
       return f"WebM Not Supported"
     elif u.endswith('.mp4'):
@@ -74,13 +74,13 @@ def home():
             data = f"""
             <div class="card">
               <div class="card-body" style="text-align: center;">
-                <img id="imgUrlRender" class="card-img-bottom" src="https://rishabcdn.intellectual-ga.repl.co/static/uploads/{filename}">
+                <img id="imgUrlRender" class="card-img-bottom" src="https://rishab-creator.github.io/RishabCDN/static/uploads/{filename}">
               </div>
             </div> \n
             """
             f.write(data)
             f.close()
-            return render_template("index.html", image=f"https://rishabcdn.intellectual-ga.repl.co/static/uploads/{filename}")
+            return render_template("index.html", image=f"https://rishab-creator.github.io/RishabCDN/static/uploads/{filename}")
         else:
           return render_template("index.html", image=f"File Type not supported!")
     return render_template("index.html")
@@ -97,7 +97,7 @@ def upload():
     }
     return jsonify(data)
   else:
-    return redirect("https://rishabcdn.intellectual-ga.repl.co")
+    return redirect("https://rishab-creator.github.io/RishabCDN")
 
 @app.route('/gallery')
 def gallery():
@@ -109,7 +109,7 @@ def gallery():
 @app.route("/on")
 def on():
   while True:
-    res = requests.head("https://rishabcdn.intellectual-ga.repl.co").status_code
+    res = requests.head("https://rishab-creator.github.io/RishabCDN").status_code
     if res == 200:
       print(res)
       return f"{res}"
