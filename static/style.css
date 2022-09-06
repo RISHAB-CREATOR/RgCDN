@@ -1,0 +1,35 @@
+div.card{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  border-radius: 10px; 
+  border-color: black; 
+  margin-left: 10%; 
+  margin-right: 10%; 
+  margin-top: 2%; 
+  margin-bottom: 2%; 
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  height: auto; 
+  width: auto;
+  margin-bottom: 2%;
+  border-radius: 2px;
+}
+
+input, input#file-upload-button{
+  border-radius: 10px;
+  border-color: black;
+  padding: 5px;
+  background: white;
+}
+
+#getBTN {
+  border-radius: 10px;
+  border-color: black;
+  padding: 5px;
+  background: white;
+}
