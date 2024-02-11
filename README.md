@@ -5,10 +5,15 @@ Welcome to RgCDN, a content delivery network (CDN) designed to efficiently deliv
 ## Features ✨
 
 ✅ **Global Content Distribution:** Distribute web content across multiple servers located in various geographic regions for fast and reliable delivery.
+
 ✅ **High Performance:** Utilize advanced caching techniques and optimized delivery protocols to minimize latency and improve loading times.
+
 ✅ **Scalability:** Scale resources dynamically to accommodate changes in traffic volume and ensure consistent performance under load.
+
 ✅ **Security:** Implement robust security measures to protect against cyber threats, including DDoS attacks, data breaches, and unauthorized access.
+
 ✅ **Analytics and Monitoring:** Monitor CDN performance in real-time and gain insights into traffic patterns, resource usage, and user behavior.
+
 ✅ **Customization:** Customize CDN configurations to meet the specific needs of different websites, applications, and content types.
 
 ## Technologies Used 💻
